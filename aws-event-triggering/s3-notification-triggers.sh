@@ -3,10 +3,9 @@
 set -x
 
 # Store the AWS account ID in a variable
-aws_account_id=$(aws sts get-caller-identity --query 'Account' --output text)
-
+aws_account_id= 331190361204
 # Print the AWS account ID from the variable
-echo "AWS Account ID: 331190361204"
+echo "AWS Account ID: $aws_account_id"
 
 # Set AWS region and bucket name
 aws_region="ap-south-1"
